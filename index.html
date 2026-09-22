@@ -3,12 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>US States Population Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .numeric {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- hi -->
-    <script src="script.js"></script>
+<h2 style="text-align: center;">U.S. States Population & Percentage (2020 Census Data)</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>State</th>
+            <th class="numeric">Population</th>
+            <th class="numeric">Population %</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alabama</td>
+            <td class="numeric">5,024,279</td>
+            <td class="numeric">1.52%</td>
+        </tr>
+        <tr>
+            <td>Alaska</td>
+            <td class="numeric">733,391</td>
+            <td class="numeric">0.22%</td>
+        </tr>
+        <tr>
+            <td>Arizona</td>
+            <td class="numeric">7,151,502</td>
+            <td class="numeric">2.16%</td>
+        </tr>
+        <tr>
+            <td>Arkansas</td>
+            <td class="numeric">3,011,524</td>
+            <td class="numeric">0.91%</td>
+        </tr>
+        <tr>
+            <td>California</td>
+            <td class="numeric">39,538,223</td>
+            <td class="numeric">11.95%</td>
+        </tr>
+        <tr>
+            <td>Colorado</td>
+            <td class="numeric">5,773,714</td>
+            <td class="numeric">1.75%</td>
+        </tr>
+        <tr>
+            <td>Connecticut</td>
+            <td class="numeric">3,605,944</td>
+            <td class="numeric">1.09%</td>
+        </tr>
+        <tr>
+            <td>Delaware</td>
+            <td class="numeric">989,948</td>
+            <td class="numeric">0.30%</td>
+        </tr>
+        <tr>
+            <td>Florida</td>
+            <td class="numeric">21,538,187</td>
+            <td class="numeric">6.51%</td>
+        </tr>
+        <tr>
+            <td>Georgia</td>
+            <td class="numeric">10,711,908</td>
+            <td class="numeric">3.24%</td>
+        </tr>
+        <tr>
+            <td>Hawaii</td>
+            <td class="numeric">1455271</td>
+            <td class="numeric">0.44%</td>
+        </tr>
+        <tr>
+            <td>Idaho</td>
+            <td class="numeric">1,839,106</td>
+            <td class="numeric">0.56%</td>
+        </tr>
+        <tr>
+            <td>Illinois</td>
+            <td class="numeric">12,812,508</td>
+            <td class="numeric">3.87%</td>
+        </tr>
+        <tr>
+            <td>Indiana</td>
+            <td class="numeric">6,785,528</td>
+            <td class="numeric">2.05%</td>
+        </tr>
+        <tr>
+            <td>Iowa</td>
+            <td class="numeric">3,190,369</td>
+            <td class="numeric">0.96%</td>
+        </tr>
+        <tr>
+            <td>Kansas</td>
+            <td class="numeric">2,937,880</td>
+            <td class="numeric">0.89%</td>
+        </tr>
+        <tr>
+            <td>Kentucky</td>
+            <td class="numeric">4,505,836</td>
+            <td class="numeric">1.36%</td>
+        </tr>
+        <tr>
+            <td>Louisiana</td>
+            <td class="numeric">4,657,757</td>
+            <td class="numeric">1.41%</td>
+        </tr>
+        <tr>
+            <td>Maine</td>
+            <td class="numeric">1,362,359</td>
+            <td class="numeric">0.41%</td>
+        </tr>
+        <tr>
+            <td>Maryland</td>
+            <td class="numeric">6,177,224</td>
+            <td class="numeric">1.87%</td>
+        </tr>
+        <tr>
+            <td>Massachusetts</td>
+            <td class="numeric">7,029,917</td>
+            <td class="numeric">2.13%</td>
+        </tr>
+        <tr>
+            <td>Michigan</td>
+            <td class="numeric">10,077,331</td>
+            <td class="numeric">3.05%</td>
+        </tr>
+        <tr>
+            <td>Minnesota</td>
+            <td class="numeric">5,706,494</td>
+            <td class="numeric">1.73%</td>
+        </tr>
+        <tr>
+            <td>Mississippi</td>
+            <td class="numeric">2,961,279</td>
+            <td class="numeric">0.90%</td>
+        </tr>
+        <tr>
+            <td>Missouri</td>
+            <td class="numeric">6,154,913</td>
+            <td class="numeric">1.86%</td>
+        </tr>
+        <tr>
+            <td>Montana</td>
+            <td class="numeric">1,084,225</td>
+            <td class="numeric">0.33%</td>
+        </tr>
+        <tr>
+            <td>Nebraska</td>
+            <td class="numeric">1,961,504</td>
+            <td class="numeric">0.59%</td>
+        </tr>
+        <tr>
+            <td>Nevada</td>
+            <td class="numeric">3,104,614</td>
+            <td class="numeric">0.94%</td>
+        </tr>
+        <tr>
+            <td>New Hampshire</td>
+            <td class="numeric">1,377,529</td>
+            <td class="numeric">0.42%</td>
+        </tr>
+        <tr>
+            <td>New Jersey</td>
+            <td class="numeric">9,288,994</td>
+            <td class="numeric">2.81%</td>
+        </tr>
+        <tr>
+            <td>New Mexico</td>
+            <td class="numeric">2,117,522</td>
+            <td class="numeric">0.64%</td>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td class="numeric">20,201,249</td>
+            <td class="numeric">6.11%</td>
+        </tr>
+        <tr>
+            <td>North Carolina</td>
+            <td class="numeric">10,439,388</td>
+            <td class="numeric">3.16%</td>
+        </tr>
+        <tr>
+            <td>North Dakota</td>
+            <td class="numeric">779,094</td>
+            <td class="numeric">0.24%</td>
+        </tr>
+        <tr>
+            <td>Ohio</td>
+            <td class="numeric">11,799,448</td>
+            <td class="numeric">3.57%</td>
+        </tr>
+        <tr>
+            <td>Oklahoma</td>
+            <td class="numeric">3,959,353</td>
+            <td class="numeric">1.20%</td>
+        </tr>
+        <tr>
+            <td>Oregon</td>
+            <td class="numeric">4,237,256</td>
+            <td class="numeric">1.28%</td>
+        </tr>
+        <tr>
+            <td>Pennsylvania</td>
+            <td class="numeric">13,002,700</td>
+            <td class="numeric">3.93%</td>
+        </tr>
+        <tr>
+            <td>Rhode Island</td>
+            <td class="numeric">1,097,379</td>
+            <td class="numeric">0.33%</td>
+        </tr>
+        <tr>
+            <td>South Carolina</td>
+            <td class="numeric">5,118,425</td>
+            <td class="numeric">1.55%</td>
+        </tr>
+        <tr>
+            <td>South Dakota</td>
+            <td class="numeric">886,667</td>
+            <td class="numeric">0.27%</td>
+        </tr>
+        <tr>
+            <td>Tennessee</td>
+            <td class="numeric">6,910,840</td>
+            <td class="numeric">2.09%</td>
+        </tr>
+        <tr>
+            <td>Texas</td>
+            <td class="numeric">29,145,505</td>
+            <td class="numeric">8.81%</td>
+        </tr>
+        <tr>
+            <td>Utah</td>
+            <td class="numeric">3,271,616</td>
+            <td class="numeric">0.99%</td>
+        </tr>
+        <tr>
+            <td>Vermont</td>
+            <td class="numeric">643,077</td>
+            <td class="numeric">0.19%</td>
+        </tr>
+        <tr>
+            <td>Virginia</td>
+            <td class="numeric">8,631,393</td>
+            <td class="numeric">2.61%</td>
+        </tr>
+        <tr>
+            <td>Washington</td>
+            <td class="numeric">7,705,281</td>
+            <td class="numeric">2.33%</td>
+        </tr>
+        <tr>
+            <td>West Virginia</td>
+            <td class="numeric">1,793,716</td>
+            <td class="numeric">0.54%</td>
+        </tr>
+        <tr>
+            <td>Wisconsin</td>
+            <td class="numeric">5,893,718</td>
+            <td class="numeric">1.78%</td>
+        </tr>
+        <tr>
+            <td>Wyoming</td>
+            <td class="numeric">576,851</td>
+            <td class="numeric">0.17%</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
